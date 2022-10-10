@@ -9,7 +9,6 @@ async function randomExcuse(url) {
         const data = await response.json()
         category.innerHTML = "Category: "
         category.innerHTML += data[0].category
-        console.log(data[0].category)
 
         paragraph.innerHTML = "Excuse: "
         paragraph.innerHTML += data[0].excuse
